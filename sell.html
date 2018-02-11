@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile.de</title>
+    <link rel="stylesheet" href="assets/css/fontawesome/on-server/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+
+    <!--custom-->
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+
+<header>
+    <div class="top-header">
+        <div class="navbar navbar-top nav-2">
+            <div class="container">
+                <!--<ul class="nav-menu navbar-nav">-->
+                <!--<li><a href="#">Link</a></li>-->
+                <!--</ul>-->
+                <div class="navbar-right">
+                    <ul class="nav-menu navbar-nav">
+                        <li class=""><a href="#"><i class="fa fa-bookmark"></i> Car park</a></li>
+                        <li class=""><a href="#"><i class="fa fa-user"></i> My Favourite car</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-header">
+        <div class="navbar main">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/image/logo.png" id="logo" alt="">
+                    </a>
+                </div>
+                <div class="navbar-right">
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+
+                            <li><a href="#" id="search">Search</a></li>
+                            <li><a href="#">Sell</a></li>
+                            <li><a href="#">Inform</a></li>
+                        </ul>
+                        <!--<ul class="nav navbar-nav navbar-right">-->
+                        <!--<li><a href="#">Link</a></li>-->
+                        <!--<li class="dropdown">-->
+                        <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
+                        <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="#">Action</a></li>-->
+                        <!--<li><a href="#">Another action</a></li>-->
+                        <!--<li><a href="#">Something else here</a></li>-->
+                        <!--<li role="separator" class="divider"></li>-->
+                        <!--<li><a href="#">Separated link</a></li>-->
+                        <!--</ul>-->
+                        <!--</li>-->
+                        <!--</ul>-->
+                    </div><!-- /.navbar-collapse -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="sell">
+
+    <div class="container">
+        <nav id="progress-bar">
+
+            <div id="nav-model" class="active"><i class="fa fa-car"></i> <a href="">Make &amp; Model</a></div>
+            <span>&nbsp;</span>
+            <div id="nav-vehicle"><i class="fa fa-cogs"></i> <a>Your ad</a></div>
+            <span>&nbsp;</span>
+            <div id="nav-user"><i class="fa fa-user"></i> <a>Contact data</a></div>
+            <span>&nbsp;</span>
+            <div id="nav-online"><i class="fa fa-flag-checkered"> </i> <a>Online</a></div>
+        </nav>
+
+        <div class="box-sell">
+
+            <div class="row">
+
+                <div class="col-md-9">
+                    <h3 class="head-section red">1. You are selling your vehicle …</h3>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="box-price panel panel-danger">
+                                <div class="panel-heading">
+                                    <input type="radio" name="customer.sellerType" class="customer-sellerType"
+                                           id="PRIVATE" value="PRIVATE" checked="" tabindex="1">
+                                    <label for="">Private Seller &nbsp;&nbsp;&nbsp; <span
+                                            class="text-right">*From 0,- €</span></label>
+                                </div>
+                                <div class="panel-body">
+                                    <p>
+                                        As a private seller, you sell vehicles privately owned by you and are not
+                                        carrying out any commercial activity.
+                                    </p>
+                                    <ul>
+                                        <li><i class="red fa fa-check-circle"></i> Free</li>
+                                        <li><i class="red fa fa-check-circle"></i> Max. 2 ads simultaneously</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="box-price panel panel-default">
+                                <div class="panel-heading">
+                                    <input type="radio" name="customer.sellerType" class="customer-sellerType"
+                                           id="COMMERCIAL" value="COMMERCIAL" tabindex="2">
+                                    <label for="">Business Seller <a href="help.html?showHelp=dealer"
+                                                                     class="questionmark">&nbsp;</a> &nbsp;&nbsp;&nbsp;
+                                        <span class="text-right">*From 0,- €</span></label>
+                                </div>
+                                <div class="panel-body">
+                                    <p>
+                                        As a private seller, you sell vehicles privately owned by you and are not
+                                        carrying out any commercial activity.
+                                    </p>
+                                    <ul>
+                                        <li><i class="red fa fa-check-circle"></i> Free</li>
+                                        <li><i class="red fa fa-check-circle"></i> Max. 2 ads simultaneously</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <h3 class="head-section red">2.Select make and Model</h3>
+                    <div class="box-entry">
+                        <h5>start manual data entry!</h5>
+                        <form action="" class="">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <div class="form-group">
+                                        <label for="">Make</label>
+                                        <select class="form-control" name="" id="">
+                                            <option value="">Please Select</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="form-group">
+                                        <label for="">Model</label>
+                                        <select class="form-control" name="" id="">
+                                            <option value="">Please Select</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="form-group">
+                                        <label for="">First Registration</label>
+                                        <select name="" id="" class="form-control">
+                                            <option value="">Month</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="form-group">
+                                        <label for=""><a href="help.html?showHelp=dealer"
+                                                         class="questionmark">&nbsp;</a></label>
+                                        <input type="text" placeholder="year" class="form-control">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                    <hr>
+                    <div class="text-right">
+                        <button class="btn btn-default">Continue <i class="fa fa-angle-right"></i></button>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+<!--java script-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
