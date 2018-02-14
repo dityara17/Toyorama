@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile.de</title>
+    <link rel="stylesheet" href="assets/css/fontawesome/on-server/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+
+    <!--custom-->
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+
+<header>
+    <div class="top-header">
+        <div class="navbar navbar-top nav-2">
+            <div class="container">
+                <!--<ul class="nav-menu navbar-nav">-->
+                <!--<li><a href="#">Link</a></li>-->
+                <!--</ul>-->
+                <div class="navbar-right">
+                    <ul class="nav-menu navbar-nav">
+                        <li class=""><a href="#"><i class="fa fa-bookmark"></i> Car park</a></li>
+                        <li class=""><a href="#"><i class="fa fa-user"></i> My Favourite car</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-header">
+        <div class="navbar main">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/image/logo.png" id="logo" alt="">
+                    </a>
+                </div>
+                <div class="navbar-right">
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+
+                            <li><a href="#" id="search">Search</a></li>
+                            <li><a href="#">Sell</a></li>
+                            <li><a href="#">Inform</a></li>
+                        </ul>
+                        <!--<ul class="nav navbar-nav navbar-right">-->
+                        <!--<li><a href="#">Link</a></li>-->
+                        <!--<li class="dropdown">-->
+                        <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
+                        <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="#">Action</a></li>-->
+                        <!--<li><a href="#">Another action</a></li>-->
+                        <!--<li><a href="#">Something else here</a></li>-->
+                        <!--<li role="separator" class="divider"></li>-->
+                        <!--<li><a href="#">Separated link</a></li>-->
+                        <!--</ul>-->
+                        <!--</li>-->
+                        <!--</ul>-->
+                    </div><!-- /.navbar-collapse -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="sell">
+
+    <div class="container">
+        <nav id="progress-bar">
+
+            <div id="nav-model" class="active"><i class="fa fa-car"></i> <a href="">Make &amp; Model</a></div>
+            <span>&nbsp;</span>
+            <div id="nav-vehicle"><i class="fa fa-cogs"></i> <a>Your ad</a></div>
+            <span>&nbsp;</span>
+            <div id="nav-user"><i class="fa fa-user"></i> <a>Contact data</a></div>
+            <span>&nbsp;</span>
+            <div id="nav-online"><i class="fa fa-flag-checkered"> </i> <a>Online</a></div>
+        </nav>
+
+        <div class="box-sell">
+
+            <div class="row">
+
+                <div class="col-md-9">
+                    <h3 class="head-section ">1. Bugati </h3>
+                    <div class="btn-fly" style="position: relative">
+                        <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#modalImportant"
+                           style="position: absolute;right: -30px;top: -25px">1. Important Data</a>
+                    </div>
+                    <!--form important-->
+                    <div id="modalImportant" class="modal fade" role="dialog">
+                        <div class="modal-dialog modal-lg">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <form action="">
+                                        <div class="form-group">
+                                            <label for="">Ad title</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="leftColumn">
+                                                    <p class="withHelp"><label for="adCategory"><i
+                                                            class="sprite required"></i>Category</label>
+                                                        <select class="form-control " name="ad.category"
+                                                                id="adCategory">
+                                                            <option value="">Please select</option>
+                                                            <option value="Cabrio">Cabriolet / Roadster</option>
+                                                            <option value="EstateCar">Estate Car</option>
+                                                            <option value="OffRoad">Off-road Vehicle/Pickup Truck
+                                                            </option>
+                                                            <option value="Limousine">Saloon</option>
+                                                            <option value="SmallCar">Small Car</option>
+                                                            <option value="SportsCar">Sports Car/Coupe</option>
+                                                            <option value="Van">Van / Minibus</option>
+                                                            <option value="OtherCar">Other</option>
+                                                        </select>
+                                                    </p>
+                                                    <div class="row">
+                                                        <div class="col-xs-6">
+                                                            <p class="withHelp"><span class="inputAndSelect"><label
+                                                                    for="adFirstRegMonth2"><i
+                                                                    class="sprite required"></i>First Registration</label> <br>
+                                                        <select name="ad.fiseleegMonth" id="adFirstRegMonth2"
+                                                                class="form-control" style="">
+                                                            <option value="">Month</option>
+                                                            <option value="01">January</option>
+                                                            <option value="02">February</option>
+                                                            <option value="03" selected="">March</option>
+                                                            <option value="04">April</option>
+                                                            <option value="05">May</option>
+                                                            <option value="06">June</option>
+                                                            <option value="07">July</option>
+                                                            <option value="08">August</option>
+                                                            <option value="09">September</option>
+                                                            <option value="10">October</option>
+                                                            <option value="11">November</option>
+                                                            <option value="12">December</option>
+                                                        </select>
+                                                       </span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-xs-6"><br>
+                                                            <input type="text" name="ad.firstRegYear"
+                                                                   id="adFirstRegYear2"
+                                                                   class="form-control"
+                                                                   value=""
+                                                                   pattern="[0-9]*"
+                                                                   title="Please enter a four digit number."
+                                                                   maxlength="4"
+                                                                   placeholder="Year">
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="withUnit withHelp"><label for="adMileage"><i
+                                                            class="sprite required"></i>Mileage *km</label>
+                                                        <input class="form-control" type="text" name="ad.mileage"
+                                                               id="adMileage" value=""
+                                                               pattern="[0-9]*" title="Please enter only numbers."
+                                                               maxlength="7" placeholder="Mileage"><label
+                                                                for="adMileage"
+                                                                class="unit"></label>
+                                                    </p>
+                                                    <p class="withHelp"><label for="adDamageStatus"><i
+                                                            class="sprite required"></i>Damaged Vehicle</label>
+                                                        <select class="form-control" name="ad.damageStatus"
+                                                                id="adDamageStatus">
+                                                            <option value="">Please select</option>
+                                                            <option value="YES">Yes</option>
+                                                            <option value="NO">No</option>
+                                                        </select>
+                                                    </p>
+                                                    <p class="withHelp"><label for="adDamageCase">Accident
+                                                        vehicle</label>
+                                                        <select class="form-control" name="ad.damageCase"
+                                                                id="adDamageCase">
+                                                            <option value="">Please select</option>
+                                                            <option value="YES">Yes</option>
+                                                            <option value="NO">No</option>
+                                                        </select>
+                                                    </p>
+                                                    <p class="withHelp">
+                                                        <label for="adReadyToDrive">Roadworthy</label>
+                                                        <select class="form-control" name="ad.readyToDrive"
+                                                                id="adReadyToDrive">
+                                                            <option value="">Please select</option>
+                                                            <option value="NO">No</option>
+                                                            <option value="YES">Yes</option>
+                                                        </select>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="rightColumn">
+                                                    <p class="withHelp">
+                                                        <label for="adUsageType">Subcategory</label>
+                                                        <select class="form-control" name="ad.usageType"
+                                                                id="adUsageType">
+                                                            <option value="USED" selected="">Used vehicle</option>
+                                                            <option value="EMPLOYEES_CAR">Employee's Car</option>
+                                                            <option value="CLASSIC">Classic Vehicle</option>
+                                                        </select>
+                                                    </p>
+                                                    <p class="withHelp"><span class="inputAndSelect">
+                                                        <label for="adPower">Power</label>
+                                                        <input type="text" name="ad.power" id="adPower"
+                                                               class="withSelect" value="" pattern="[0-9.]{0,4}"
+                                                               title="Please enter only numbers and dots." maxlength="4"
+                                                               placeholder="Power">
+                                                        <select
+                                                                name="ad.powerUnit" id="adPowerUnit" class="withInput"><option
+                                                                value="KW" selected="">kW</option><option
+                                                                value="PS">PS</option>
+                                                        </select>
+                                                        </span>
+                                                    </p>
+                                                    <p>
+                                                        <label for="adTransmission">Gearbox</label>
+                                                        <select name="ad.transmission" id="adTransmission" class="form-control">
+                                                            <option value="">Please select</option>
+                                                            <option value="MANUAL_GEAR">Manual gearbox</option>
+                                                            <option value="SEMIAUTOMATIC_GEAR">Semi-automatic</option>
+                                                            <option value="AUTOMATIC_GEAR">Automatic transmission
+                                                            </option>
+                                                        </select>
+                                                    </p>
+                                                    <p><label for="adFuel">Fuel</label>
+                                                        <select name="ad.fuel" id="adFuel" class="form-control">
+                                                            <option value="">Please select</option>
+                                                            <option value="DIESEL">Diesel</option>
+                                                            <option value="ELECTRICITY">Electric</option>
+                                                            <option value="ETHANOL">Ethanol (FFV, E85, etc.)</option>
+                                                            <option value="HYBRID_DIESEL">Hybrid (diesel / electric)
+                                                            </option>
+                                                            <option value="HYBRID">Hybrid (petrol/electric)</option>
+                                                            <option value="HYDROGENIUM">Hydrogen</option>
+                                                            <option value="LPG">LPG</option>
+                                                            <option value="CNG">Natural Gas</option>
+                                                            <option value="PETROL">Petrol</option>
+                                                            <option value="OTHER">Other</option>
+                                                        </select>
+                                                    </p>
+                                                    <p class="fuel " id="e10Capable">
+                                                        <input type="checkbox" name="ad.e10Capable" id="adE10Capable" class=""
+                                                               disabled="disabled"><label
+                                                            for="adE10Capable">E10-enabled</label></p>
+                                                    <p class="fuel " id="bioDieselCapable">
+                                                        <input type="checkbox" name="ad.bioDieselCapable"
+                                                               id="adBioDieselCapable" disabled="disabled"><label
+                                                            for="adBioDieselCapable">Biodiesel Suitable</label></p>
+                                                    <p class="fuel " id="vegetableOilCapable"><input type="checkbox"
+                                                                                                     name="ad.vegetableOilCapable"
+                                                                                                     id="adVegetableOilCapable"
+                                                                                                     disabled="disabled"><label
+                                                            for="adVegetableOilCapable">Suitable for Vegetable
+                                                        Oil</label></p></div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <p>*Price</p>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <input type="text" name="price" class="form-control" placeholder="Price">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <select name="negotable" class="form-control">
+                                                    <option value="">Fixed</option>
+                                                    <option value="">Negotiable</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="text-right">
+                                            <button type="submit" class="btn btn-danger">Continue</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-7">
+                            <img src="assets/image/camera_big.png" alt="">
+                            <br> <br> <br>
+                            <a href="" class="btn btn-danger">2. UPLOAD PICTURES</a>
+                        </div>
+                        <div class="col-md-5">
+                            <p class="t-price">Price</p>
+                            <p>VAT not reclaimable</p>
+                            <p><span>Car, <i>Category</i>, Used vehicle</span></p>
+                            <p>FR 03/2011</p>
+                            <p>
+                                Mileage <br>
+                                Fuel <br>
+                                Power <br>
+                                Gearbox <br>
+                            </p>
+
+                        </div>
+                    </div>
+                    <h3 class="head-section">FURTHER TECHNICAL DATA</h3>
+                    <div class="btn-fly" style="position: relative">
+                        <a href="" class="btn btn-danger" style="position: absolute;right: -30px;top: -25px">3.
+                            TECHNICAL DATA</a>
+                    </div>
+                    <p>
+                        Cubic Capacity: <br>
+
+                        Number of Seats: <br>
+
+                        Doors: <br>
+
+                        Fuel consumption combined: <br>
+
+                        Fuel consumption (urban): <br>
+
+                        Fuel consumption (extra-urban): <br>
+
+                        CO2 emissions comb.: <br>
+
+                        Emission Class: <br>
+
+                        Emissions Sticker: <br>
+
+                        Number of Vehicle Owners: <br>
+
+                        HU valid until: <br>
+
+                        Colour: <br>
+
+                        Interior Design: <br>
+
+                        Interior Colour: <br>
+                    </p>
+
+                    <h3 class="head-section">VEHICLE DESCRIPTION</h3>
+                    <div class="btn-fly" style="position: relative">
+                        <a href="" class="btn btn-danger" style="position: absolute;right: -30px;top: -25px">4.
+                            DESCRIPTION</a>
+                    </div>
+                    <p>
+                        Vehicle description
+                    </p>
+                    <hr>
+                    <div class="text-right">
+                        <button class="btn btn-default">Continue <i class="fa fa-angle-right"></i></button>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+<!--java script-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
